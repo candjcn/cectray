@@ -1,0 +1,355 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\Sleep.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+IDI_ICON3               ICON                    "res\\icon3.ico"
+IDI_ICON4               ICON                    "res\\icon4.ico"
+IDI_ICON5               ICON                    "res\\icon5.ico"
+IDI_ICON6               ICON                    "res\\icon6.ico"
+IDI_ICON7               ICON                    "res\\icon7.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TrayMenu.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""      // ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TrayMenu.ico"
+IDR_MAINFRAME2          ICON                    "res\\idr_main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRAYMENU_DIALOG DIALOGEX 0, 0, 20, 20
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,7,6,6,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,7,7,6,6,NOT WS_VISIBLE
+END
+
+IDD_ABOUT_DIALOG DIALOGEX 0, 0, 305, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "About HDMI-CEC Tray"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,248,149,50,14
+    CTEXT           "HDMI-CEC TRAY v1.1 by Chirsoft (2012)\nhttp://sites.google.com/site/chir21/home/CEC-Tray\n\nProvides support for the Pulse-8 CEC Adapter in Windows applications.",IDC_STATIC,7,139,238,34,SS_SUNKEN,WS_EX_TRANSPARENT
+    CONTROL         133,IDC_STATIC2,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,7,7,291,125,WS_EX_TRANSPARENT
+END
+
+IDD_PREFS_DIALOG DIALOGEX 0, 0, 255, 317
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HDMI-CEC Tray Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save changes",IDOK,127,296,59,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,296,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,76,241,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,12,241,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,254,241,1
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | TBS_ENABLESELRANGE | TBS_TOOLTIPS | WS_TABSTOP,148,39,97,23
+    LTEXT           "HDMI Input:",IDC_STATIC,109,41,40,8
+    LTEXT           "When TV powers off:",IDC_STATIC,42,89,104,11
+    COMBOBOX        IDC_COMBO1,153,87,88,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           " TV Ports ",IDC_STATIC,7,8,35,8
+    LTEXT           " Power Settings ",IDC_STATIC,7,72,55,8
+    ICON            IDI_ICON2,IDC_STATIC,16,29,20,20,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    ICON            IDI_ICON1,IDC_STATIC,15,95,20,20,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    LTEXT           "When PC goes in/out of standby:",IDC_STATIC,42,109,109,11
+    COMBOBOX        IDC_COMBO2,153,107,88,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,152,241,1
+    LTEXT           "Green button:",IDC_STATIC,42,185,46,8
+    CONTROL         " Program Launcher  ",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,7,148,65,8
+    EDITTEXT        IDC_EDIT1,89,224,112,12,ES_AUTOHSCROLL
+    ICON            IDI_ICON4,IDC_STATIC,16,182,18,16,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    CTEXT           "1",IDC_STATIC,154,60,8,8
+    CTEXT           "4",IDC_STATIC,231,60,8,8
+    PUSHBUTTON      "Browse...",IDC_BUTTON1,201,223,40,14
+    LTEXT           "Red button:",IDC_STATIC,42,165,39,8
+    EDITTEXT        IDC_EDIT2,89,163,112,12,ES_AUTOHSCROLL
+    ICON            IDI_ICON6,IDC_STATIC,16,162,18,16,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    PUSHBUTTON      "Browse...",IDC_BUTTON2,201,162,40,14
+    LTEXT           "Blue button:",IDC_STATIC,42,226,40,8
+    EDITTEXT        IDC_EDIT3,89,183,112,12,ES_AUTOHSCROLL
+    ICON            IDI_ICON3,IDC_STATIC,16,223,18,16,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    PUSHBUTTON      "Browse...",IDC_BUTTON3,201,182,40,14
+    EDITTEXT        IDC_EDIT4,89,203,112,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BUTTON4,201,202,40,14
+    LTEXT           "Yellow button:",IDC_STATIC,42,205,48,8
+    ICON            IDI_ICON5,IDC_STATIC,16,202,18,16,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    CONTROL         "Automatic",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,41,22,49,10
+    CONTROL         "Manual",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,41,40,39,10
+    GROUPBOX        "Static",IDC_STATIC,36,7,91,54,NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,8,286,241,1
+    CONTROL         "Launch automatically when Windows starts:    ",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,42,264,169,10
+    CONTROL         " Startup Control ",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,7,250,55,8
+    ICON            IDI_ICON7,IDC_STATIC,16,260,20,20
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,95,126,63,15
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,178,126,63,15
+    LTEXT           "between:",IDC_STATIC,60,129,32,11
+    CTEXT           "and",IDC_STATIC,161,129,14,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "CEC Tray MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "CecTray"
+            VALUE "LegalCopyright", "Copyright (C) 2012"
+            VALUE "OriginalFilename", "CecTray.EXE"
+            VALUE "ProductName", "CEC Tray Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TRAYMENU_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 13
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 13
+    END
+
+    IDD_ABOUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_PREFS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Tray"
+    BEGIN
+        MENUITEM "&Preferences...",             ID_TRAY_PREFERENCES
+        MENUITEM "&About HDMI-CEC Tray...",     ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MENUIMAGES TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_APP_OPEN
+    BUTTON      ID_ITEM1
+    BUTTON      ID_ITEM3
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MENUIMAGES          BITMAP                  "res\\menuimag.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PREFS_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 11, 0
+0x6f44, 0x6e20, 0x746f, 0x6968, 0x676e, "\000" 
+    IDC_COMBO1, 0x403, 20, 0
+0x7550, 0x2074, 0x4350, 0x6920, 0x746e, 0x206f, 0x7473, 0x6e61, 0x6264, 
+0x0079, 
+    IDC_COMBO2, 0x403, 11, 0
+0x6f44, 0x6e20, 0x746f, 0x6968, 0x676e, "\000" 
+    IDC_COMBO2, 0x403, 16, 0
+0x6f50, 0x6577, 0x2072, 0x5654, 0x6f20, 0x2f6e, 0x666f, 0x0066, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About CecTray..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "CecTRay"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TrayMenu.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#if !defined(_AFXDLL)
+#include "afxribbon.rc"      // ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
